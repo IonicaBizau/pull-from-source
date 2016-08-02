@@ -1,0 +1,43 @@
+{
+  "name": "pull-from-source",
+  "description": "Pulls the changes from the source repository in the forked one.",
+  "keywords": [
+    "pull",
+    "from",
+    "source",
+    "pulls",
+    "the",
+    "changes",
+    "repository",
+    "in",
+    "forked",
+    "one"
+  ],
+  "license": "MIT",
+  "version": "1.0.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Ionică Bizău <bizauionica@gmail.com> (http://ionicabizau.net)",
+  "files": [
+    "bin/",
+    "app/",
+    "lib/",
+    "dist/",
+    "src/",
+    "resources/",
+    "menu/",
+    "scripts/",
+    "cli.js",
+    "index.js"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/IonicaBizau/pull-from-source.git"
+  },
+  "bugs": {
+    "url": "https://github.com/IonicaBizau/pull-from-source/issues"
+  },
+  "homepage": "https://github.com/IonicaBizau/pull-from-source#readme"
+}
