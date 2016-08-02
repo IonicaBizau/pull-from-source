@@ -1,6 +1,9 @@
 {
   "name": "pull-from-source",
   "description": "Pulls the changes from the source repository in the forked one.",
+  "bin": {
+    "pull-from-source": "./bin/pull-from-source"
+  },
   "keywords": [
     "pull",
     "from",
@@ -41,7 +44,13 @@
   },
   "homepage": "https://github.com/IonicaBizau/pull-from-source#readme",
   "dependencies": {
+    "emoji-logger": "^1.0.3",
     "gh-fork-source": "^1.0.0",
-    "spawno": "^1.0.2"
-  }
+    "spawno": "^1.0.2",
+    "tilda": "^4.3.1"
+  },
+  "directories": {
+    "example": "example"
+  },
+  "devDependencies": {}
 }

@@ -1,0 +1,33 @@
+#!/usr/bin/env node
+
+"use strict";
+
+const pull = require("..")
+    , Tilda = require("tilda")
+    , log = require("emoji-logger")
+    ;
+
+let parser = new Tilda(`${__dirname}/../package.json`, {
+    examples: [
+        "pull-from-source"
+      , "pull-from-source -b gh-pages"
+    ]
+  , options: [
+      {
+        name: "branch"
+      , type: String
+      , desc: "The branch name to pull from."
+      , opts: ["b", "branch"]
+      }
+    ]
+}).main(a => {
+    log("Pulling... This may take a while.");
+    pull(".", {
+        branch: a.options.branch
+    }, (err, data) => {
+        if (err) {
+            return a.exit(err);
+        }
+        log("Done.");
+    });
+});
