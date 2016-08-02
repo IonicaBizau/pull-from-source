@@ -2,4 +2,8 @@
 
 const pullFromSource = require("../lib");
 
-console.log(pullFromSource());
+pullFromSource("path/to/local/fork", {
+    branch: "gh-pages"
+}, function (err) {
+    /* ... */
+});

@@ -39,5 +39,9 @@
   "bugs": {
     "url": "https://github.com/IonicaBizau/pull-from-source/issues"
   },
-  "homepage": "https://github.com/IonicaBizau/pull-from-source#readme"
+  "homepage": "https://github.com/IonicaBizau/pull-from-source#readme",
+  "dependencies": {
+    "gh-fork-source": "^1.0.0",
+    "spawno": "^1.0.2"
+  }
 }
