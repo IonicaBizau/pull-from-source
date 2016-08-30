@@ -46,6 +46,7 @@
   "dependencies": {
     "emoji-logger": "^1.0.3",
     "gh-fork-source": "^1.0.0",
+    "noop6": "^1.0.2",
     "spawno": "^1.0.2",
     "tilda": "^4.3.1"
   },
