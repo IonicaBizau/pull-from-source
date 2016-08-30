@@ -23,11 +23,11 @@ let parser = new Tilda(`${__dirname}/../package.json`, {
 }).main(a => {
     log("Pulling... This may take a while.");
     pull(".", {
-        branch: a.options.branch
+        branch: a.options.branch.value
     }, (err, data) => {
         if (err) {
             return a.exit(err);
         }
         log("Done.");
-    });
+    }).on("progress", msg => console.log(msg));
 });
